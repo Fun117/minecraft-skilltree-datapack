@@ -1,0 +1,14 @@
+{
+  "criteria": {
+    "killed_entity": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": []
+      }
+    }
+  },
+  "rewards": {
+    "function": "skilltree:skill/combat/xp_killed"
+  },
+  "sends_telemetry_event": false
+}

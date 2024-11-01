@@ -1,0 +1,2 @@
+tellraw @a ["\n",{"text":"データパック/スキルツリーの設定\n\n","bold":true,"color":"green"},{"text":"XPログ："},{"text":"切り替え","bold":true,"underlined":true,"color":"yellow","clickEvent":{"action":"run_command","value":"/say a"}},{"text":" ("},{"text":"true","color":"red"},{"text":"/"},{"text":"false","color":"blue"},{"text":")\nレベルアップ効果音："},{"text":"切り替え","bold":true,"underlined":true,"color":"yellow","clickEvent":{"action":"run_command","value":"/say b"}},{"text":" ("},{"text":"true","color":"red"},{"text":"/"},{"text":"false","color":"blue"},{"text":")"},"\n "]
+

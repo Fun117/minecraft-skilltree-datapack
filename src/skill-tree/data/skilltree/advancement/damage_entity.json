@@ -1,0 +1,14 @@
+{
+  "criteria": {
+    "damage_entity": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": []
+      }
+    }
+  },
+  "rewards": {
+    "function": "skilltree:skill/combat/xp_damage"
+  },
+  "sends_telemetry_event": false
+}
