@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "plant_seed": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "minecraft:farmland"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "skilltree:skill/farming/add_points"
+  },
+  "sends_telemetry_event": false
+}

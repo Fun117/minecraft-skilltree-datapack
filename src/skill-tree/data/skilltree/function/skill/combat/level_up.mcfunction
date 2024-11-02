@@ -1,12 +1,12 @@
 #ボスバー表示時間
-scoreboard players set combat/bar_time skilltree_values 50
+scoreboard players set @s skilltree_combat_bar_time 100
 
 scoreboard players add @s skilltree_combat_level 1
 scoreboard players operation @s skilltree_combat_xp -= @s skilltree_combat_required
 
 execute as @a at @s run playsound minecraft:entity.player.levelup player @s ~ ~ ~
 
-tellraw @s ["\n",{"text": "戦闘スキルがレベルアップしました！","bold": true,"color": "yellow"},{"text":"新しいレベル: ","underlined": true}, {"score":{"name":"@s","objective":"skilltree_combat_level"},"underlined":true},"\n "]
+tellraw @s ["\n",{"text": "戦闘スキルがレベルアップしました！","bold": true,"color": "#ff00ff"},{"text":"新しいレベル: ","underlined": true}, {"score":{"name":"@s","objective":"skilltree_combat_level"},"underlined":true},"\n "]
 
 # レベル +5 / 1 ~ 5：木の剣
 execute as @a if score @s skilltree_combat_level matches ..5 run give @s minecraft:wooden_sword
